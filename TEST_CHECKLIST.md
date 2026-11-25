@@ -44,3 +44,12 @@ Every listed field is required; answers are persisted in `snapshot.responses`, r
 5. With the same alias in two browser tabs, change different answers and look for explicit conflict; export each version before choosing.
 6. Download and open both PDFs; confirm wrapping, pagination, titles, alias, completion and all 30 responses.
 7. Inspect site assets, focus outlines, keyboard/touch controls, and tooltips. Review Chrome console for errors.
+## Static build audit — observed
+
+- **PASS:** Frontend JavaScript syntax (`node --check`) and reference Apps Script JavaScript syntax.
+- **PASS:** All 30 field IDs distinct and match 24 choice/6 written inventory with distribution 12/12/6.
+- **PASS:** Every written response has two question-specific sentence frames; completion and both PDF exporters iterate the same 30 fields.
+- **PASS:** Exact user-supplied `/exec` URL occurs in student HTML; client/backend lesson ID, contract and field inventory match.
+- **PASS:** GitHub repository tree contains `index.html`, three SVG diagrams, vendored jsPDF, license, teacher key, test checklist and reference backend code.
+- **NOT TESTED:** Browser execution in current environment was blocked by `net::ERR_BLOCKED_BY_ADMINISTRATOR`; this is an environment restriction, not a demonstrated failure in the classroom page.
+- **NOT TESTED:** GitHub Pages published URL, cloud save/recovery on the live site, both PDFs, and classroom Chromebook accessibility.
