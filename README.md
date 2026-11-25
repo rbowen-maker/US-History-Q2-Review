@@ -12,6 +12,7 @@ This student-facing prototype covers 30 responses: 12 Westward Expansion, 12 Ame
 ## Files
 
 - `index.html`: student-facing page; the questions and answer feedback are embedded for offline usability.
+- `backend/Code.gs`: complete reference copy of the `USH_Q2_REVIEW_V1` Apps Script backend; do **not** replace a deployed version without backup, authorization and regression tests.
 - `assets/westward-impacts.svg`, `assets/imperialism-perspectives.svg`, `assets/wwi-tensions.svg`: original diagrams; click to enlarge.
 - `assets/jspdf.umd.min.js`: pinned local jsPDF v2.5.2, required for Download Assignment PDF.
 - `assets/jsPDF-LICENSE.txt`: upstream MIT license.
@@ -24,7 +25,7 @@ GitHub repository **Settings → Pages → Build and deployment → Deploy from 
 
 ## Setup and privacy
 
-The Apps Script code is maintained in the teacher's existing Apps Script project under `Code.gs`. The **`SHEET_ID`** is stored only as a Script Property there; it is not committed to this public repository. Maintain the existing active backend deployment and its exact contract. Backend changes require backup and regression tests. 
+The active Apps Script code is maintained in the teacher's existing Apps Script project under `Code.gs`; the repository includes a matching reference copy for reuse. The **`SHEET_ID`** is stored only as a Script Property there; it is not committed to this public repository. Maintain the existing active backend deployment and its exact contract. Backend changes require backup and regression tests. 
 
 **Aliases are not authentication.** A public script endpoint may allow anyone with the URL and an alias to access responses under that alias. No sensitive data or actual student responses should be used without school/district authorization. Use only fictitious aliases and test answers until all checks pass. Do not share real student records in GitHub or bug reports.
 
